@@ -1,39 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Grupo Contigo ABC - Servicios</title>
-  <link rel="stylesheet" href="nuevo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VJE Start Up</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1f1c2c, #928dab);
+            color: white;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            animation: fadeIn 2s ease-in-out;
+        }
+        .logo {
+            max-width: 100px;
+            border-radius: 10px;
+            margin-left: 20px;
+        }
+        section {
+            margin: 40px auto;
+            padding: 20px;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(5px);
+            transition: transform 0.3s;
+        }
+        section:hover {
+            transform: scale(1.02);
+        }
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        img:hover {
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
 </head>
 <body>
-  <!-- Barra de navegación -->
-  <nav>
-    <div class="logo">
-      <img src="Logo.jpg" alt="Logo de Grupo Contigo ABC" height="80">
-    </div>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Quiénes Somos</a></li>
-      <li><a href="#">Servicios</a></li>
-      <li><a href="#">Estructura</a></li>
-      <li><a href="#">Contacto</a></li>
-    </ul>
-  </nav>
-
-  <!-- Sección de servicios -->
-  <section class="servicios-section">
-    <div>
-      <h1>Misión</h1>
-      <p>Desarrollar un software de calidad e innovador para diferentes empresas y con ello satisfacer las necesidades de nuestros clientes.</p>
-    </div>
-  </section>
-
-  <!-- Contenido adicional -->
-  <div class="vision">
-    <h2 class="titulo-vision">Visión</h2>
-    <p>Ser reconocidos a nivel nacional como una de las mejores empresas tecnológicas enfocadas en diferentes sectores del mercado.</p>
-  </div>
-
+    <header>
+        <img src="Logo.jpg" alt="Logo de VJE Start Up" class="logo">
+        <div>
+            <h1>VJE Start Up</h1>
+            <p>Paseos del Hule, 475, Col. Real Santa Clara CP. 52004, Lerma, Estado de México, México.</p>
+        </div>
+    </header>
+    <main>
+        <section class="antecedentes">
+            <h2>Antecedentes de la Organización</h2>
+            <p>VJE Start Up, empresa enfocada en las Tecnologías de la Información y Comunicación, fue fundada en enero del 2025 por un equipo de estudiantes de la Universidad Tecnológica del Valle de Toluca...</p>
+        </section>
+        <section class="mision-vision">
+            <h2>Misión</h2>
+            <p>Desarrollar un software de calidad e innovador para diferentes empresas y con ello satisfacer las necesidades de nuestros clientes.</p>
+            <h2>Visión</h2>
+            <p>Ser reconocidos a nivel nacional como una de las mejores empresas tecnológicas enfocadas en diferentes sectores del mercado.</p>
+            <h2>Objetivo</h2>
+            <p>Nuestro objetivo es lograr un crecimiento constante a través de la innovación continua, integrando nuevas tecnologías para mejorar nuestros servicios y garantizar excelencia en la atención a nuestros clientes.</p>
+        </section>
+        <section class="organigrama">
+            <h2>Organigrama</h2>
+            <img src="image.png" alt="Organigrama de la empresa">
+        </section>
+    </main>
 </body>
 </html>
